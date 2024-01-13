@@ -16,10 +16,7 @@ app.use(
   })
 );
 app.use(express.json());
-const stripe = require("stripe")(
-  "sk_test_51OPvWsE20rTG9mx1KKv9GTSFu34VzjajZskvUKB12qyhHJoLf2dALrDsR667EHa2we0wVHlaUzoBOmoJY4wKqyyO00EC98Rir2"
-);
-// const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 // console.log("Stripe Key:", stripe._api.auth);
 // console.log("Stripe Secret Key:", stripe._api.auth.split(" ")[1]);
